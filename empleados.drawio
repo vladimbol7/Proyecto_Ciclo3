@@ -1,14 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2022-08-28T23:47:08.422Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.70" etag="oCtGN6VtSfxe26kn7djN" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-28T23:48:20.077Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.70" etag="7KZ6Gei0vXkLP0UMPt3P" version="20.2.7" type="github">
   <diagram id="gxHaPOPfgEftcZuhUfg4" name="Página-1">
     <mxGraphModel dx="2031" dy="1123" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="dhNmBRZBMMMeY8OzZlI0-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="1120" height="1330" as="geometry" />
+          <mxGeometry x="40" y="40" width="1120" height="1060" as="geometry" />
         </mxCell>
         <mxCell id="dhNmBRZBMMMeY8OzZlI0-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="1120" height="160" as="geometry" />
+          <mxGeometry x="40" y="50" width="1120" height="150" as="geometry" />
         </mxCell>
         <mxCell id="dhNmBRZBMMMeY8OzZlI0-3" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/boostrap-128.png" vertex="1" parent="1">
           <mxGeometry x="60" y="56" width="128" height="128" as="geometry" />
@@ -41,9 +41,6 @@
         </mxCell>
         <mxCell id="dhNmBRZBMMMeY8OzZlI0-10" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=51;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="64" y="500" width="1056" height="330" as="geometry" />
-        </mxCell>
-        <mxCell id="dhNmBRZBMMMeY8OzZlI0-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=51;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="950" width="1120" height="190" as="geometry" />
         </mxCell>
         <mxCell id="dhNmBRZBMMMeY8OzZlI0-27" value="" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
           <mxGeometry x="81" y="551" width="1010" height="279" as="geometry" />
@@ -168,7 +165,7 @@
           <mxGeometry x="537" y="870" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dhNmBRZBMMMeY8OzZlI0-64" value="Ingrese los datos del empleado" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;html=1;strokeColor=#C8C8C8;fillColor=#ffffff;whiteSpace=wrap;verticalAlign=top;align=left;fontSize=18;spacing=15;spacingTop=-5;" vertex="1" parent="1">
-          <mxGeometry x="1170" y="570" width="409" height="620" as="geometry" />
+          <mxGeometry x="1170" y="256" width="409" height="620" as="geometry" />
         </mxCell>
         <mxCell id="dhNmBRZBMMMeY8OzZlI0-65" value="" style="shape=line;strokeColor=#dddddd;resizeWidth=1;" vertex="1" parent="dhNmBRZBMMMeY8OzZlI0-64">
           <mxGeometry width="400" height="10" relative="1" as="geometry">
