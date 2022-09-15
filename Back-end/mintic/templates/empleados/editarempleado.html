@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar empleado</title>
+</head>
+<body>
+    <h2>Editar empleado</h2>
+    <form action="/actualizar/{{empleado.id_personar}}" method="post" enctype="multipart/form-data">
+        Nombre:
+        <input type="text" name="txtnombres" id="txtnombres" value="{{empleado.nombres}}" required>
+        <br>
+        Apellido:
+        <input type="text" name="txtapellidos" id="txtapellidos" value="{{empleado.apellidos}}" required>
+        <br>
+        Correo:
+        <input type="email" name="txtcorreo" id="txtcorreo" value="{{empleado.email}}" required>
+        <br>
+        Documento:
+        <input type="number" name="txtdocumento" id="txtdocumento" value="{{empleado.documento}}" required>
+        <br>
+        Telefono:
+        <input type="number" name="txttelefono" id="txttelefono" value="{{empleado.telefono}}" required>
+        <br>
+        <button type="submit" value="{{empleado.id_personar}}">Guardar</button>
+    </form>
+<br>
+</body>
+</html>
