@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href= "index.html">
+                <img src=img/loogo.png alt="" width="200">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sign in
+                        </button>
+                        <ul class="dropdown-menu">
+                            
+                            <form class="form p-2 m-auto" id="botonLog" >
+                                <div class="mb-3"  >
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejmp@email.com">
+                                <div class="mb-3 mt-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*****">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        
+                        </ul>
+                      </div>
+                  <li class="nav-item" ><a class="nav-link" href="index.html" >Inicio</a></li>  
+                  <li class="nav-item"><a class="nav-link" href="#">Items</a></li>  
+                  <li class="nav-item"><a class="nav-link" href="proveedores.html">Proveedores</a></li>  
+                  <li class="nav-item"><a class="nav-link" href="usuarios.html">Usuarios</a></li>  
+                  
+                </ul> 
+            </div>
+        </div>
+    </nav>
+
+    <!--tabla-->
+    <div class="container mt-5 mb-5">
+        <div class="row-auto">
+            <div class="col">
+                <table class="table table-hover table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Documento</th>
+                            <th>Correo</th>
+                            <th>Teléfono</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1234</td>
+                            <td>Carlos Giraldo</td>
+                            <td>525252-2</td>
+                            <td>giraldoCar@gmail.com</td>
+                            <td>3200505055</td>
+                        </tr>
+                        <tr>
+                            <td>1234</td>
+                            <td>Maria Vanegas</td>
+                            <td>525252-2</td>
+                            <td>mariavan@gmail.com</td>
+                            <td>3200505055</td>
+                        </tr>
+                        <tr>
+                            <td>1234</td>
+                            <td>Juliana Rodriguez</td>
+                            <td>525252-2</td>
+                            <td>julianard@gmail.com</td>
+                            <td>3200505055</td>
+                        </tr>
+                        <tr>
+                            <td>1234</td>
+                            <td>Andres Marin</td>
+                            <td>525252-2</td>
+                            <td>Andres1520@gmail.com</td>
+                            <td>3200505055</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Añadir
+            </button>
+            <ul class="dropdown-menu p-3">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                      <label for="validationCustom01" class="form-label">First name</label>
+                      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustom02" class="form-label">Last name</label>
+                      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustomUsername" class="form-label">Username</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationCustom03" class="form-label">City</label>
+                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationCustom04" class="form-label">State</label>
+                      <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationCustom05" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="validationCustom05" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid zip.
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                  </form>
+            </ul>
+        </div>
+    </div>
+    
+    <!--footer-->
+    <div class="container-fluid pt-5">
+        <div class="row pt-5 bg-dark text-white">
+
+            <div class="col-xs12 col-md-6 col-lg-3">
+                <p class="h3">Proyecto</p>
+            </div>
+            <div class="col-xs12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">links</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="index.html">Inicio</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="usuarios.html">Usuarios</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="proveedores.html">Proveedores</a>
+                </div>
+            </div>
+            <div class="col-xs12 col-md-6 col-lg-3">
+                <p class="h5">información</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Privacidad</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Acerca de Nosotros</a>
+                    </div>
+            </div>
+               
+            <div class="col-xs12 col-md-6 col-lg-3">
+                <p class="h5">Contacto</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">PQRS</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Correo</a>
+                    </div>
+            </div>
+            <div class="col-xs-12 pt-4">
+                <p class="text-white text-center">Copyright - All rights reserved © 2022</p>
+            </div>         
+
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    
+</body>
+</html>
