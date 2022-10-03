@@ -1,4 +1,4 @@
-from flask import Flask,session
+from flask import Flask, session
 from flask import render_template,request,redirect
 from flaskext.mysql import MySQL
 from pymysql.cursors import DictCursor
@@ -124,4 +124,4 @@ def login():
         return render_template('empleados/index.html')
 
 if __name__== '__main__':
-    app.run(debug=True)
+    app.run()
