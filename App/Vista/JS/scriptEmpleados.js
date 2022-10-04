@@ -46,7 +46,7 @@ $(document).ready(function() {
                                 <td>${empleado.documento}</td>
                                 <td>${empleado.telefono}</td>
                                 <td>${empleado.email}</td>
-                                <td class="text-center"><a class="btnEditar btn btn-primary">Editar</a><a class="btnBorrar btn btn-primary">Borrar</a>
+                                <td class="text-center"><a class="btnEditar btn btn-primary">Editar</a><a class="btnBorrar btn btn-danger">Borrar</a>
                                 <input type="hidden" id="idEmpleado" name="idEmpleado" value=${empleado.id_personar}>
                                 <input type="hidden" id="rol" name="rol" value=${empleado.rol}>
                                 <input type="hidden" id="clave" name="clave" value=${empleado.clave}></td>
@@ -117,7 +117,6 @@ function submitForm(){
             dataType: "json",
             success: function(){
                 alert('Creado exitosamente')
-                location.reload();
             }
         })
     }
@@ -136,11 +135,10 @@ function submitForm(){
             type: "PUT",
             url: 'http://127.0.0.1:5000/modificarEmpleado/' + id,
             data: data,
-            dataType: "json",
-            success: function(){
-                alert('Creado exitosamente')
-                location.reload();
-            }
-        })
+            dataType: "json"
+        }).done(function(){
+            alert('Modificado exitosamente');
+        });
     }
+    windows.location.reload(true);
 }

@@ -159,7 +159,7 @@ def modificarProveedor(id):
     proveedor = proveedores.modificarProveedor(dicc, id)
     return "actualización exitosa"
 
-@app.route('/eliminarItem/<int:id>', methods=['DELETE'])
+@app.route('/eliminarProveedor/<int:id>', methods=['DELETE'])
 def eliminarProveedor(id):
     proveedores = AccesoProveedores()
     proveedor = proveedores.eliminarProveedor(id)

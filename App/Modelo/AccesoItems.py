@@ -18,7 +18,7 @@ class AccesoItems:
         mysql = conexionSql.conectar()
         conn = mysql.connect()
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM items")
+        cursor.execute("SELECT i.*, u.documento AS 'usuario', p.nombre AS 'proveedor' FROM items i INNER JOIN personal u ON u.id_personar = i.id_personar INNER JOIN proveedores p ON p.id_proveedores  = i.id_proveedor ")
         respuesta = cursor.fetchall()
         return respuesta
     
