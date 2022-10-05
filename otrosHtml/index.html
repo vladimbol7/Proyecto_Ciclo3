@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <!--NavBar-->
+    <header>
+        <div>
+            <div class="container-fluid">
+                <div class="row bg-primary">
+                    <div class="col-6">
+                        <a class="navbar-brand" href= "#">
+                            <img src=img/loogo.png alt="" width="200">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <form class="row g-3 mt-3">
+                            <div class="col-auto ms-auto">
+                                <label for="exampleInputEmail1" class="visually-hidden">Email</label>
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="ejmp@email.com">
+                            </div>
+                            <div class="col-auto">
+                              <label for="inputPassword2" class="visually-hidden">Password</label>
+                              <input type="password" class="form-control" id="inputPassword2" placeholder="******">
+                            </div>
+                            <div class="col-auto">
+                              <button type="submit" class="btn btn-info mb-3">Submit</button>
+                            </div>
+                          </form>
+                        <!--<form class="form p-2 m-auto" id="botonLog" >
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejmp@email.com">
+                                </div>
+                                <div class="col-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*****">
+                                </div>
+                                <div class="col-3">
+                                    <br>
+                                    <button type="submit" class="btn btn-info">Submit</button>
+                                </div>
+                            </div>
+                        </form>-->
+                    </div>
+                </div>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-sm navbar-light bg-secondary">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" ><a class="nav-link text-light" id="menuInicio" href="index.html" >Inicio</a></li>  
+                        <!--cards
+                        <li class="nav-item"><a class="nav-link" href="#">Items</a></li>  
+                        <li class="nav-item"><a class="nav-link" href="proveedores.html">Proveedores</a></li>  
+                        <li class="nav-item"><a class="nav-link" href="usuarios.html">Usuarios</a></li>
+                        -->
+                    </ul> 
+                    </div>
+                </div>
+            </nav>
+        </div>     
+    </header>
+
+    <section>
+        <!--cards-->
+        <div class="container p-5">
+            <h1 class="text-center">Bienvenido</h1>
+            <div class="row pt-5">
+            <!--Items-->
+                <div class="col-md">
+                    <div class="card" >
+                        <img src="img/Items.png" alt="items" class="card-img-fluid" id="imgItems" >
+                        <div class="card-body">
+                            <h5 class="card-title">Items</h5>
+                            <p class="card-text pb-4">Elementos que hacen parte del inventario de suministros de la empresa.</p>
+                            <!--
+                            <a href="#" class="btn btn-primary">Entrar</a>
+                            -->
+                        </div>
+                    </div>
+                </div>
+        <!--Proveedores-->            
+                <div class="col-md">
+                    <div class="card" >
+                        <img src="img/proveedores.png" alt="proveedores" class="card-img-fluid" id="imgProveedores" >
+                        <div class="card-body">
+                            <h5 class="card-title">Proveedores</h5>
+                            <p class="card-text">Empresas que proveen los items que hacen parte del inventario de la empresa.</p>
+                            <!--
+                            <a href="proveedores.html" class="btn btn-primary">Entrar</a>
+                            -->
+                        </div>
+
+                    </div>
+                </div>
+        <!--Usuarios-->
+                <div class="col-md">
+                    <div class="card" >
+                        <img src="img/usuarios.png" alt="usuarios" class="card-img-fluid"  id="imgUsuarios">
+                        <div class="card-body">
+                            <h5 class="card-title">Usuarios</h5>
+                            <p class="card-text">Personal que tabaja en la empresa, catalogados por empleados o administradores.</p>
+                            <!--
+                            <a href="usuarios.html" class="btn btn-primary">Entrar</a>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="container-fluid w-100 pt-5">
+        <div class="row pt-5 bg-dark text-white">
+            <div class="col-xs12 col-md-6 col-lg-3">
+                <p class="h3">My inventory</p>
+            </div>
+            <div class="col-xs12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">links</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="index.html">Inicio</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="usuarios.html">Usuarios</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="proveedores.html">Proveedores</a>
+                </div>
+            </div>
+            <div class="col-xs12 col-md-6 col-lg-3">
+                <p class="h5">información</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Privacidad</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Acerca de Nosotros</a>
+                </div>
+            </div>
+            <div class="col-xs12 col-md-6 col-lg-3">
+                <p class="h5">Contacto</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">PQRS</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Correo</a>
+                </div>
+            </div>
+            <div class="col-xs-12 pt-4">
+                <p class="text-white text-center">Copyright - All rights reserved © 2022</p>
+            </div>         
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
