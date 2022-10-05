@@ -12,7 +12,7 @@ $(document).ready(function() {
         const usuario = datosUsuario.nombres + " " + datosUsuario.apellidos;
         resultado += `
             <div class="col-6">
-                <a class="navbar-brand" href= "#">
+                <a class="navbar-brand" href="index.html">
                     <img src=img/loogo.png alt="" width="200">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
