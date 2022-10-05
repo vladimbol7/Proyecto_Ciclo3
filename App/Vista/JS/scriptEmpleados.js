@@ -68,6 +68,10 @@ $(document).on('click', '.btnBorrar', function(e) {
             url: 'http://127.0.0.1:5000/eliminarEmpleado/' + id,
             dataType: "json",
         }).done(function(){
+            alertify
+                .alert("Empleado eliminado correctamente", function(){
+                alertify.message('OK');
+            });
             location.reload();
         })
     },
@@ -116,7 +120,11 @@ function submitForm(){
             data: data,
             dataType: "json",
             success: function(){
-                alert('Creado exitosamente')
+                alertify
+                    .alert("Empleado creado correctamente", function(){
+                    alertify.message('OK');
+                });
+                location.reload();
             }
         })
     }
@@ -135,10 +143,14 @@ function submitForm(){
             type: "PUT",
             url: 'http://127.0.0.1:5000/modificarEmpleado/' + id,
             data: data,
-            dataType: "json"
-        }).done(function(){
-            alert('Modificado exitosamente');
-        });
+            dataType: "json",
+            success: function(){
+                alertify
+                    .alert("Empleado actualizado correctamente", function(){
+                    alertify.message('OK');
+                });
+                location.reload();
+            }
+        })
     }
-    windows.location.reload(true);
 }

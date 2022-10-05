@@ -19,44 +19,19 @@
     <header>
         <div>
             <div class="container-fluid">
-                <div class="row bg-primary">
-                    <div class="col-6">
-                        <a class="navbar-brand" href= "#">
-                            <img src=img/loogo.png alt="" width="200">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="col-6">
-                        <form class="form p-2 m-auto" id="botonLog" >
-                            <div class="row">
-                                <div class="col-3"></div>
-                                <div class="col-3">
-                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejmp@email.com">
-                                </div>
-                                <div class="col-3">
-                                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*****">
-                                </div>
-                                <div class="col-3">
-                                    <br>
-                                    <button type="submit" class="btn btn-info">Submit</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div id="consultarUsuario" class="row bg-primary">
+                    
                 </div>
+            </div>
         </div>
         <div>
             <nav class="navbar navbar-expand-sm navbar-light bg-secondary">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item" ><a class="nav-link text-light" href="index.html" >Inicio</a></li>  
-                        <li class="nav-item"><a class="nav-link text-light" href="listarItems.html">Items</a></li>  
-                        <li class="nav-item"><a class="nav-link text-light" href="listarProveedores.html">Proveedores</a></li>  
-                        <li class="nav-item"><a class="nav-link text-light" href="listarEmpleados.html">Usuarios</a></li>
+                        <li id="linkItem" class="nav-item"><a class="nav-link text-light" href="listarItems.html">Items</a></li>  
+                        <li id="linkProveedor" class="nav-item"><a class="nav-link text-light" href="listarProveedores.html">Proveedores</a></li>  
+                        <li id="linkUsuario" class="nav-item"><a class="nav-link text-light" href="listarEmpleados.html">Usuarios</a></li>
                     </ul> 
                     </div>
                 </div>
@@ -170,6 +145,6 @@
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script type="text/javascript" src="JS/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="JS/scriptProveedores.js"></script>
-
+    <script type="text/javascript" src="JS/login.js"></script>
 </body>
 </html>

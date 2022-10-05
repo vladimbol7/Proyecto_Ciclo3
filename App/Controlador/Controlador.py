@@ -70,16 +70,7 @@ def login():
     empleado = AccesoEmpleados()
     user = empleado.iniciarsesion(email, clave)
     #pregunta si user no es NULL (es null cuando la consulta no devuelte ninguna fila)
-    if user is not None:
-        #guarda en variables de sesion los datos
-        session['user'] = user['nombres'] + " " + user['apellidos']
-        session['email'] = user['email']
-        session ['id'] = user['id_personar']
-        session['rol'] = user ['rol']
-        #devuelve a la página de
-        return  '''<h1>''' + "Bienvenido "+ session['rol'] + " "+session['user'] +'''</h1>'''
-    else:
-        return "Correo y/o contraseña incorrectos"
+    return user
 
 @app.route('/buscarItem', methods=['GET'])
 def buscarItem():

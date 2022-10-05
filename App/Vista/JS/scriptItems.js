@@ -86,6 +86,10 @@ $(document).on('click', '.btnBorrar', function(e) {
             url: 'http://127.0.0.1:5000/eliminarItem/' + id,
             dataType: "json",
         }).done(function(){
+            alertify
+                .alert("Item eliminado correctamente", function(){
+                alertify.message('OK');
+            });
             location.reload();
         })
     },
@@ -129,7 +133,11 @@ function submitForm(){
             data: data,
             dataType: "json",
             success: function(){
-                alert('Creado exitosamente')
+                alertify
+                    .alert("Item creado correctamente", function(){
+                    alertify.message('OK');
+                });
+                location.reload();
             }
         })
     }
@@ -148,8 +156,11 @@ function submitForm(){
             data: data,
             dataType: "json"
         }).done(function(){
-            alert('Modificado exitosamente');
+            alertify
+                .alert("Item actualizado correctamente", function(){
+                alertify.message('OK');
+            });
+            location.reload();
         });
     }
-    windows.location.reload(true);
 }

@@ -1,8 +1,61 @@
+.btnBorrar{
+    background-color:  #dc3545;
+    color: white;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.card{
+    width: 20rem;
+}
+
+#imgItems{
+    height: 300px;
+}
+
+#imgProveedores{
+    height: 300px;
+}
+
+#imgUsuarios{
+    height: 300px;
+}
+.btnEditar{
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+
 .btnCrear{
-    margin: 2%;
+    margin-bottom: 1%;
+    margin-top: 1%;
     width: 10%;
 }
 
-.btnEditar{
-    margin-right: 10%;
+#menuInicio{
+    margin-left: 7px;
+}
+
+#submit{
+    background-color: rgb(227, 235, 236);
+}
+
+#userIcon{
+    color: rgb(142, 191, 247);
+}
+
+.derecha{
+    float:right;
+}
+
+#usuario{
+    color: white;
+}
+
+.top-1{
+    margin-top: 2%;
+}
+
+.top-2{
+    margin-top: 5%;
 }

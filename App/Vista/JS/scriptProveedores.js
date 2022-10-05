@@ -54,6 +54,10 @@ $(document).on('click', '.btnBorrar', function(e) {
             url: 'http://127.0.0.1:5000/eliminarProveedor/' + id,
             dataType: "json",
         }).done(function(){
+            alertify
+                .alert("Proveedor eliminado correctamente", function(){
+                alertify.message('OK');
+            });
             location.reload();
         })
     },
@@ -94,7 +98,11 @@ function submitForm(){
             data: data,
             dataType: "json",
             success: function(){
-                alert('Creado exitosamente')
+                alertify
+                    .alert("Proveedor creado correctamente", function(){
+                    alertify.message('OK');
+                });
+                location.reload();
             }
         })
     }
@@ -112,8 +120,11 @@ function submitForm(){
             data: data,
             dataType: "json"
         }).done(function(){
-            alert('Modificado exitosamente');
+            alertify
+                .alert("Proveedor actualizado correctamente", function(){
+                alertify.message('OK');
+            });
+            location.reload();
         });
     }
-    windows.location.reload(true);
 }
