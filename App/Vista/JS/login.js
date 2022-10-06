@@ -124,5 +124,5 @@ function loginUsuario(){
 
 function cerrarSesion() {
     localStorage.removeItem('usuario');
-    location.reload();
+    location.href = 'index.html';
 };
